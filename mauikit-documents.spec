@@ -107,6 +107,7 @@ widgets shared amoing the other Maui apps.
 %files -n %{libname}
 %{_libdir}/libMauiKitDocuments.so*
 %{_libdir}/qt5/qml/org/mauikit/documents/libMauiKitDocuments.so*
+%{_libdir}/qt5/qml/org/mauikit/documents/qmldir
 
 %files -n %{devname}
 %{_includedir}/MauiKit/Documents/
