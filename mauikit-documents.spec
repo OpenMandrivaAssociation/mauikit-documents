@@ -52,6 +52,7 @@ BuildRequires:	cmake(Qt5Xml)
 BuildRequires:	cmake(Qt5Test)
 BuildRequires:	cmake(Qt5WebEngine)
 BuildRequires:  pkgconfig(poppler-qt5)
+BuildRequires:  pkgconfig(zlib)
 BuildRequires:	qt5-qtgraphicaleffects
 BuildRequires:	qt5-qtdeclarative
 BuildRequires:	qt5-qtquickcontrols2
