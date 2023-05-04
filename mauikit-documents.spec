@@ -1,8 +1,8 @@
 %define major 2
 
 #define snapshot 20220106
-%define libname %mklibname mauikit-documents
-%define devname %mklibname -d mauikit-documents
+%define libname %mklibname MauiKitDocuments
+%define devname %mklibname -d MauiKitDocuments
 
 Name:		mauikit-documents
 Version:	1.0.1
@@ -100,5 +100,14 @@ widgets shared amoing the other Maui apps.
 
 %install
 %ninja_install -C build
+%find_lang mauikitdocuments
 
-%files
+%files -f mauikitdocuments.lang
+
+%files -n %{libname}
+%{_libdir}/libMauiKitDocuments.so*
+%{_libdir}/qt5/qml/org/mauikit/documents/libMauiKitDocuments.so*
+
+%files -n %{devname}
+%{_includedir}/MauiKit/Documents/
+%{_libdir}/cmake/MauiKitDocuments/
