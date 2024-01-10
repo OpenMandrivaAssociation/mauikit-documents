@@ -1,14 +1,14 @@
-%define major 2
+%define major 3
 
 #define snapshot 20220106
 %define libname %mklibname MauiKitDocuments
 %define devname %mklibname -d MauiKitDocuments
 
 Name:		mauikit-documents
-Version:	1.1.0
+Version:	3.0.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	MauiKit QtQuick plugins for text editing
-Url:		http://mauikit.org/
+Url:		https://mauikit.org/
 Source0:	https://invent.kde.org/maui/mauikit-documents/-/archive/%{?snapshot:master/mauikit-documents-master.tar.bz2#/mauikit-documents-%{snapshot}.tar.bz2}%{!?snapshot:v%{version}/mauikit-documents-v%{version}.tar.bz2}
 
 License:	LGPL-2.1-or-later, CC0 1.0, BSD-2-Clause
@@ -16,7 +16,7 @@ Group:		Applications/Productivity
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
-BuildRequires:  cmake(MauiKit)
+BuildRequires:  cmake(MauiKit3)
 BuildRequires:	cmake(Qt5Qml)
 BuildRequires:	cmake(Qt5Sql)
 BuildRequires:	cmake(Qt5Core)
@@ -105,10 +105,10 @@ widgets shared amoing the other Maui apps.
 %files -f mauikitdocuments.lang
 
 %files -n %{libname}
-%{_libdir}/libMauiKitDocuments.so*
+%{_libdir}/libMauiKitDocuments3.so*
 %{_libdir}/qt5/qml/org/mauikit/documents/libMauiKitDocuments.so*
 %{_libdir}/qt5/qml/org/mauikit/documents/qmldir
 
 %files -n %{devname}
-%{_includedir}/MauiKit/Documents/
-%{_libdir}/cmake/MauiKitDocuments/
+%{_includedir}/MauiKit3/Documents/
+%{_libdir}/cmake/MauiKitDocuments3/
