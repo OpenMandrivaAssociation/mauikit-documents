@@ -5,7 +5,7 @@
 %define devname %mklibname -d MauiKitDocuments
 
 Name:		mauikit-documents
-Version:	3.0.2
+Version:	3.1.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	MauiKit QtQuick plugins for text editing
 Url:		https://mauikit.org/
