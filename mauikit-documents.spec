@@ -52,7 +52,7 @@ BuildRequires:	cmake(Qt6Network)
 BuildRequires:	cmake(Qt6Xml)
 BuildRequires:	cmake(Qt6Test)
 BuildRequires:	cmake(Qt6WebEngineCore)
-BuildRequires:  pkgconfig(poppler-qt5)
+BuildRequires:  pkgconfig(poppler-qt6)
 BuildRequires:  pkgconfig(zlib)
 #BuildRequires:	qt5-qtgraphicaleffects
 #BuildRequires:	qt5-qtdeclarative
